@@ -48,7 +48,7 @@ class _AudioEffectsState extends State<AudioEffects>
   AudioPlayer audioPlayer = AudioPlayer();
 
   void getAudio() async {
-    if (widget.isPlaying==true) {
+    if (widget.isPlaying==false) {
       var res = await audioPlayer.pause();
       if (res == 1) {
         setState(
@@ -68,7 +68,6 @@ class _AudioEffectsState extends State<AudioEffects>
   @override
   void initState() {
     getAudio();
-    audioPlayer.play(widget.url);
     _controller.repeat();
     super.initState();
 
@@ -106,7 +105,7 @@ class _AudioEffectsState extends State<AudioEffects>
         padding: widget.padding,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage('https://photos.google.com/search/_tra_/photo/AF1QipPAQgGNI6pGFRwC0DkJ-YgLrblrbN6BIdAmNBe0'),
+            image: AssetImage('packages/audio_effect/assets/images/caset.webp'),
           ),
         ),
         child: QueryArtworkWidget(
