@@ -106,7 +106,7 @@ class _AudioEffectsState extends State<AudioEffects>
         padding: widget.padding,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/caset.webp'),
+            image: NetworkImage('https://photos.google.com/search/_tra_/photo/AF1QipPAQgGNI6pGFRwC0DkJ-YgLrblrbN6BIdAmNBe0'),
           ),
         ),
         child: QueryArtworkWidget(
