@@ -1,3 +1,3 @@
-## 1.0.0+4
+## 1.0.2+3
 
 Added the Audio Effects For Audio Players.
