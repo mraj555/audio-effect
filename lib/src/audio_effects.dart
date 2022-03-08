@@ -11,8 +11,8 @@ class AudioEffects extends StatefulWidget {
   final double? artworkHeight;
   final Color? color;
   final BorderRadius? artworkBorder;
-  final int? id;
-  final ArtworkType? type;
+  final int id;
+  final ArtworkType type;
   final String? url;
   final bool? isPlaying;
   final bool? isLocal;
@@ -109,8 +109,8 @@ class _AudioEffectsState extends State<AudioEffects>
           ),
         ),
         child: QueryArtworkWidget(
-          id: widget.id!,
-          type: widget.type!,
+          id: widget.id,
+          type: widget.type,
           keepOldArtwork: true,
           artworkWidth: widget.artworkWidth,
           artworkHeight: widget.artworkHeight,
