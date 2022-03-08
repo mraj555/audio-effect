@@ -8,7 +8,7 @@ Audio Effecr package lets you add a beautiful Rotating Thumbnail Of Audio to you
 
 ```yaml
 dependencies:
-  audio_effects: ^1.0.0+1
+  audio_effects: ^1.0.0+3
 ```
 
 2. Import the package and use it in your Flutter App.
