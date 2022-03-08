@@ -48,7 +48,7 @@ class _AudioEffectsState extends State<AudioEffects>
   AudioPlayer audioPlayer = AudioPlayer();
 
   void getAudio() async {
-    if (widget.isPlaying) {
+    if (widget.isPlaying==true) {
       var res = await audioPlayer.pause();
       if (res == 1) {
         setState(
