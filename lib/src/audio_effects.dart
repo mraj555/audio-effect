@@ -11,10 +11,10 @@ class AudioEffects extends StatefulWidget {
   final double? artworkHeight;
   final Color? color;
   final BorderRadius? artworkBorder;
-  final int id;
-  final ArtworkType type;
-  final String url;
-  final bool isPlaying;
+  final int? id;
+  final ArtworkType? type;
+  final String? url;
+  final bool? isPlaying;
   final bool? isLocal;
   final EdgeInsetsGeometry? padding;
 
@@ -58,7 +58,7 @@ class _AudioEffectsState extends State<AudioEffects>
         );
       }
     } else {
-      var res = await audioPlayer.play(widget.url, isLocal: widget.isLocal);
+      var res = await audioPlayer.play(widget.url!, isLocal: widget.isLocal);
       if (res == 1) {
         _controller.repeat();
       }
@@ -109,8 +109,8 @@ class _AudioEffectsState extends State<AudioEffects>
           ),
         ),
         child: QueryArtworkWidget(
-          id: widget.id,
-          type: widget.type,
+          id: widget.id!,
+          type: widget.type!,
           keepOldArtwork: true,
           artworkWidth: widget.artworkWidth,
           artworkHeight: widget.artworkHeight,
