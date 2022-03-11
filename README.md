@@ -66,8 +66,7 @@ class AudioScreen extends StatelessWidget {
 
 </td>
 <td>
-<img  src="https://user-images.githubusercontent.com/95268111/157144460-709998e7-08fa-4c41-974d-8880d1db9058.mp4
-"  alt="">
+<video  src="https://user-images.githubusercontent.com/95268111/157144460-709998e7-08fa-4c41-974d-8880d1db9058.mp4"/>
 </td>
 </tr>
 </table>
